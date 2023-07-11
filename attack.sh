@@ -32,7 +32,7 @@ fi
 
 # Check if .git directory is accessible
 if curl --output /dev/null --silent --head --fail "$url/.git"; then
-    echo ".git directory found, starting download. this may take a while..."
+    echo ".git directory found, starting download. This may take a while..."
 else
     echo ".git directory not found at $url"
     exit 1
