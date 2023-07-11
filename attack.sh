@@ -32,9 +32,9 @@ fi
 
 # Check if .git directory is accessible
 if curl --output /dev/null --silent --head --fail "$url/.git"; then
-    echo ".git directory found, starting download. This may take a while..."
+    echo "[+] .git directory found, starting download. This may take a while..."
 else
-    echo ".git directory not found at $url"
+    echo "[!] .git directory not found at $url"
     exit 1
 fi
 
@@ -44,7 +44,9 @@ wget --mirror -I .git $url/.git 2> /dev/null
 # Move to target directory
 cd $target_dir
 
+echo "[+] Reconstructing project..."
+
 # Reset to the latest commit
 git reset --hard
 
-echo "Project has been downloaded and reconstructed in the $target_dir directory."
+echo "[+] Project has been downloaded and reconstructed in the $target_dir directory."
