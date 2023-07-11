@@ -2,6 +2,8 @@
 
 Git Exposed is a powerful tool for ethical hacking. It leverages the unintended exposure of `.git` directories on web servers to clone and reconstruct complete projects. This tool is designed to provide a clear window into potential vulnerabilities.
 
+<img src="images/vulnerable.png" alt="Vulnerable to git exposed" />
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
