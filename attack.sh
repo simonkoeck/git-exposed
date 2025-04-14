@@ -16,7 +16,7 @@ github_repo=git-exposed
 script_path=$(realpath "$0")
 
 # Get the timestamp of the last commit to the repo
-github_time=$(curl --silent https://api.github.com/repos/$github_user/$github_repo/git/refs/heads/main \
+github_time=$(curl --silent https://api.github.com/repos/$github_user/$github_repo/commits/main \
     | grep -Po '"date": "\K.*?(?=")' | head -1)
 
 # Convert the GitHub timestamp to seconds since the Unix epoch
