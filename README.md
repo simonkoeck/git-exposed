@@ -30,20 +30,20 @@ Navigate into the cloned directory:
 cd git-exposed
 ```
 
-Ensure that the attack.sh script is executable:
+Ensure that the expose.sh script is executable:
 
 ```
-chmod +x attack.sh
+chmod +x expose.sh
 ```
 
 Now, you're ready to start using GitExposed.
 
 ### Usage
 
-To use GitExposed, simply run the `attack.sh` bash script with the URL of the target as an argument. For example:
+To use GitExposed, simply run the `expose.sh` bash script with the URL of the target as an argument. For example:
 
 ```bash
-./attack.sh http://example.com
+./expose.sh http://example.com
 ```
 
 The script will then attempt to download the `.git` directory and reconstruct the project.
